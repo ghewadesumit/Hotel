@@ -1,0 +1,585 @@
+/*Hotel css*/
+
+/*body css*/
+body{
+	position:relative;
+	font-family:'lato';
+	color:#111;
+	overflow-x:hidden;
+	background-color:#585858;
+	
+}
+
+/*Font style of elements*/
+strong{
+	font-weight:900;
+}
+
+p{
+	line-height:24px;
+	font-weight:300px;
+}
+/*Anchors*/
+a,
+a:focus{
+color:#99ccff;
+}
+
+a:hover{
+color:#3399ff;
+text-decoration:none;
+}
+
+
+.vertical-align{
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
+}
+/*selection property makes change to other color specified in the selection part*/
+::selection{
+	background:#99ccff;
+	color:#fff;
+}
+/*section*/
+
+section{
+	padding:50px 0;
+}
+
+hr{
+	width:85px;
+}
+
+hr.icon:after{
+content:"\f123";
+font-family:'fontAwesome';
+font-size:1.5em;
+position:relative;
+color:#99ccff;
+top:-15px;
+padding:5px;
+background:#585858;
+}
+
+/*Section Heading*/
+.section-heading{
+color:#99ccff;
+}
+
+.section-heading h3{
+	font-weight:300;
+	letter-spacing:3px;
+}
+
+.section-heading hr{
+	border-color:#99ccff;
+	margin-top:30px;
+	margin-bottom:40px;
+}
+
+
+/*----------------------------------------------
+@header
+------------------------------------------------*/
+#home{
+	background:url(../images/wall2.png) fixed;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover; /* this property strecthes the image*/
+	color:#ffef96;
+	height:600px;
+}
+
+.logo{
+	font-size:70px;
+	font-weight:100;
+	border-top:1px solid #fff;
+	border-bottom:1px solid #fff;
+	display:inline-block;
+	padding:0 20px 15px 20px; /*top right bottom left;*/
+}
+
+#home h3{
+	font-weight:300;
+	margin:0px;
+	font-size:30px;
+	font-family:Rockwell, Courier Bold, Courier, Georgia, Times, Times New Roman, serif;
+}
+
+#home .learn-more{
+	color:#ffef96;
+	font-size:20px;
+	position:absolute;
+}
+
+.learn-more .glyphicon{
+	position:absolute;
+}
+
+.learn-more .second-arrow{
+	top:9px;
+}
+
+.learn-more .third-arrow{
+	top:17px;
+}
+
+/*----------------------------------------------
+@navigation
+------------------------------------------------*/
+/*#navio{
+	position:relative;
+	top:20px;
+	left:20px;
+	padding:5px;
+	border-radius:5px;
+	font-size:25px;
+}*/
+/*.navbar{
+	position:relative;
+	float:left;
+	width:250px;
+	height:250px;
+	top:10px;
+	left:20px;
+	padding:5px;
+}*/
+.navbar{
+	padding:0;
+	bottom:0;
+	margin-bottom:0;
+}
+
+.navbar-inverse .navbar-nav >li >a{
+	font-size:18px;
+	color:#ffef96;
+}
+
+.navbar-inverse .navbar-brand{
+	color:#ffef96;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #ffef96;
+}
+
+/*----------------------------------------------
+@about section
+------------------------------------------------*/
+
+#about{
+	background:url(../images/f2.jpg) fixed;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	color:#ffef96;
+	height:600px;
+	opacity:2;
+}
+
+#about h3{
+	letter-spacing:3px;
+	font-weight:100;
+	font-size:50px;
+	font-family:Copperplate Gothic Light, sans-serif;
+}
+
+#about h4{
+	font-weight:300;
+	font-size:25px;
+	padding:0 20%;/*be 20% from right and left*/
+	font-family:Rockwell, Courier Bold, Courier, Georgia, Times, Times New Roman, serif;
+	/*font-family:Copperplate Gothic Light, sans-serif;*/
+	
+}
+
+/*----------------------------------------------
+@services
+------------------------------------------------*/
+
+.service-item{
+	margin-bottom:40px;
+}
+
+.service-item  i{
+	font-size:40px;
+	float:left;
+	border-right:1px solid #ffef96;
+	padding-right:20px;
+
+}
+
+.service-title{
+	margin-top:-24px;
+	margin-left:20px;
+	display:inline-block;/*plays important role here*/
+	padding:0;
+}
+
+.service-title h3{
+	color:#ffef96;
+	font-weight:900;
+}
+.service-title h4{
+	color:#99ccff; /*cyan*/
+	font-weight:100;
+}
+
+.service-item p{
+	text-align:center-right;
+	color:#ffef96;
+	
+}
+
+/*----------------------------------------------
+@skills
+------------------------------------------------*/
+#skills{
+	background:url(../images/f8.jpg) fixed;
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:#ffef96;
+	
+}
+
+#skills h1{
+	font-size:48px;
+	font-weight:900;
+}
+
+#skills h3{
+	font-weight:300;
+	margin-top:0px;
+}
+
+#skills p{
+	font-size:18px;
+	margin: 40px 0; /*top bottom, right left*/
+}
+
+.button{
+	font-size:20px;
+	color:#ffef96;
+	border-bottom:3px solid #ffef96;
+	border-radius:2px;
+	padding-bottom:5px;
+	text-transform:uppercase;
+}
+.button:hover{
+	border-color:#ffef96;
+
+}
+
+#skills .button:last-child{
+	margin-left:20px;
+}
+
+
+/*progress barsss*/
+.progress{
+	height:30px;
+	margin-bottom:30px;
+	background-color:black;
+	opacity:.78;
+	box-shadow:none;
+	border-radius:5px;
+}
+.progress-bar{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5e4c+0,dbba00+100 */
+background: #ff5e4c; /* Old browsers */
+background: -moz-linear-gradient(left,  #ff5e4c 0%, #dbba00 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #ff5e4c 0%,#dbba00 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #ff5e4c 0%,#dbba00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5e4c', endColorstr='#dbba00',GradientType=1 ); /* IE6-9 */
+
+}
+
+.progress-bars h5{
+	font-size:16px;
+}
+
+/*----------------------------------------------
+@portfolio
+------------------------------------------------*/
+
+#protfolio .col-md-4{
+	padding:0px;
+} 
+.portfolio-thumb, .portfolio-overlay{
+	height:270px;
+
+}
+#protfolio .portfolio-thumb img{
+	width:100%;
+	height:100%;
+}
+
+#protfolio .portfolio-thumb .portfolio-overlay{
+opacity:0;
+height:100%
+width:100%;
+text-align:center;
+top:0; /* we have used top bottom left and ri8 as zero to align the hover effect */
+bottom:0;/*with the img so that it won't go anywhere else*/
+left:0;
+right:0;
+position:absolute;
+background:rgba(153, 204, 255,.6);
+padding:20px 10px 20px 10px;
+transition:all 0.2s ease-in-out;
+-webkit-transition:all 0.2s ease-in-out;
+}
+
+#protfolio .portfolio-thumb:hover .portfolio-overlay{
+	opacity:1;
+	cursor:pointer;
+}
+
+#protfolio .portfolio-thumb .portfolio-overlay h2{
+	font-weight:300;
+	color:#ffef96;
+	border-top:1px solid #fff;
+	border-bottom:1px solid #fff;
+	padding:10px 20px 10px 20px;
+	display:inline-block;
+}
+
+#protfolio .portfolio-thumb .portfolio-overlay a{
+	font-size:25px;
+	color:#ffef96;
+	position:absolute; /* we use aboslute to position the elements freely*/
+	bottom:20px;
+	right:20px;
+}
+
+
+/*----------------------------------------------
+@stats
+------------------------------------------------*/
+.stat{
+		color:#ffef96;
+		height:230px;
+}
+
+.stat i{
+	font-size:40px;
+}
+
+.stat h4{
+	font-weight:300;
+}
+
+.hotel{
+	/*background:url(../images/stat1.jpg);*/
+	background:url(../images/wallpaper2.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	background-size:cover;
+}
+.insta{
+	/*background:url(../images/stat2.jpg);*/
+	background:url(../images/wallpaper5.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	background-size:cover;
+}
+.face{
+	/*background:url(../images/stat3.png);*/
+	background:url(../images/wallpaper2.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	background-size:cover;
+}
+.spices{
+	/*background:url(../images/stat4.png);*/
+	background:url(../images/wallpaper5.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	background-size:cover;
+}
+
+
+/*----------------------------------------------
+@Quotes
+------------------------------------------------*/
+
+#quotes{
+	background:url(../images/f3.jpg);
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	height:440px;
+	color:#ffef96;
+}
+.owl-carousel h4{
+	font-style:none;
+	font-weight:300;
+}
+
+.owl-carousel cite{
+	font-style:normal;
+	font-size:24px;
+	font-weight:900;
+}
+
+.owl-carousel img{
+	width:80px;
+	height:80px;
+	border-radius:5px;
+	margin:20px 0;
+}
+
+.owl-carousel p{
+	font-weight:300;
+	font-size:20px;
+	font-family:Rockwell, Courier Bold, Courier, Georgia, Times, Times New Roman, serif;
+}
+.owl-carousel blockquote{
+	border-left:none;
+}
+
+blockquote{
+	margin:0;
+}
+
+
+/*----------------------------------------------
+@Contacts
+------------------------------------------------*/
+
+.form-control{
+	height:45px;
+	padding:15px;
+	font-size:16px;
+	color:#8c8c8c;
+	background-color:#f5f5f5;
+	border:1px solid #d1d1d1;
+	font-weight:300;
+}
+
+.form-control:focus{
+	box-shadow:none;
+	border-color:#99ccff;
+	color:#99ccff;
+	background-color:#fff;
+}
+
+.form-control::-webkit-placeholder{
+	color:#99ccff;
+}
+
+.form-control::-moz-input-placeholder{
+	color:#99ccff;
+}
+.form-control::-ms-input-placeholder{
+	color:#99ccff;
+}
+
+.form-control:focus::-webkit-placeholder{
+	color:#99ccff;
+}
+
+.form-control:focus::-moz-input-placeholder{
+	color:#99ccff;
+}
+
+.form-control:focus::-ms-input-placeholder{
+	color:#99ccff;
+}
+
+.cont_button{
+margin-bottom:10px;
+}
+/*----------------------------------------------
+@footer
+------------------------------------------------*/
+
+#foot{
+	background:url(../images/wall2.png);
+	background-attachment:fixed;
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	color:#ffef96;
+	padding:50px 0;
+
+}
+
+#foot .logo{
+	font-weight:300;
+	padding:0 20px 10px 20px;
+}
+
+#foot ul{
+	padding-left:0px;
+	margin-top:10px;
+	display:block;
+}
+
+#foot ul li{
+	display:inline-block;
+}
+
+#foot ul a{
+	font-size:30px;
+	color:#ffef96;
+	padding:0 10px;
+}
+
+.copyrights{
+	background-color:rgba(0,0,0,0.5);
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:100%;
+	text-align:center;
+	foot-size:12px;
+	padding:5px 0;
+}
+
+/*-----------------------------------------------
+@media query
+-------------------------------------------------*/
+@media(min-width:970px) and (max-width:1170px){
+	.service-item i{
+		float:none;
+		border:none;
+		display:block;
+	}
+
+	.service-item{
+		text-align:center;
+	}
+
+	.service-title{
+		margin-top:0;
+		margin-left:0;
+	}
+}
+
+
+@media (max-width:750px){
+
+	.progress-bars{
+		margin-top:30px;
+	}
+	
+	.service-title{
+		
+		margin-top:0;
+		margin-left:5px;
+	}
+	.service-item{
+		text-align:center;
+	}
+	.service-item i{
+		float:none;
+		border:none;
+		display:block;
+	}
+}
